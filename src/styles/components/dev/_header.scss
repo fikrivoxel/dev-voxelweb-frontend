@@ -1,0 +1,160 @@
+.header-dev {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  z-index: 10;
+}
+.header-dev-triangle {
+  position: absolute;
+  top: 0;
+  width: calc(75px + 10%);
+  height: 100%;
+  background-color: #fbb859;
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+  z-index: 15;
+}
+.header-dev-logo {
+  position: relative;
+  left: calc(1px + 0.8vw);
+  width: calc(40px + 5vw);
+  z-index: 20;
+  > img {
+    width: calc(40px + 5vw);
+  }
+}
+.header-dev-logo-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.header-dev-logo-title,
+.header-dev-logo-subs {
+  text-align: center;
+  color: #795b81;
+}
+.header-dev-logo-title {
+  font-family: 'SteelFish', sans-serif;
+  line-height: 1;
+  @include media-breakpoint-up(md) {
+    font-size: $h5-font-size;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: $h1-font-size;
+  }
+}
+.header-dev-logo-subs {
+  font-family: 'Roboto', sans-serif;
+}
+.header-dev-content {
+  width: 100%;
+  height: 100%;
+  @include media-breakpoint-up(md) {
+    width: calc(100% - (calc(1px + 0.5vw) + calc(40px + 5vw)) - 25px);
+  }
+}
+.header-dev-container {
+  position: relative;
+  display: flex;
+  background-color: #fff;
+}
+.header-dev-toggle {
+  margin-left: auto;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border: 0;
+  &.active {
+    background-color: transparent;
+    .menu-icon {
+      span {
+        &:first-child {
+          transform: rotate(45deg);
+          bottom: 0;
+          margin: auto;
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+        &:last-child {
+          bottom: 0;
+          top: 0;
+          transform: rotate(-45deg);
+          margin: auto;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
+.header-dev-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  transform: translateX(100%);
+  background-color: #fff;
+  @include transition(transform .15s, box-shadow .15s);
+  &.scroll {
+    @include media-breakpoint-up(md) {
+      box-shadow: 10px 10px 0 0 #795b81;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    position: relative;
+    display: flex;
+    width: 100%;
+  }
+}
+.header-dev-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  @include media-breakpoint-up(md) {
+    display: flex;
+    margin-left: auto;
+  }
+}
+.header-dev-btn {
+  font-family: 'Bebas Neue', sans-serif;
+  text-align: left;
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  padding: 10px;
+  color: #795b81;
+  @include hover {
+    text-decoration: underline;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: $h5-font-size;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: $h3-font-size;
+  }
+}
+.menu-icon {
+  position: relative;
+  width: 30px;
+  height: 11px;
+  margin: auto;
+  span {
+    left: 0;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #795b81;
+    @include transition(all .5s);
+    &:first-child {
+      top: 0;
+    }
+    &:nth-child(2) {
+      top: 5px;
+    }
+    &:last-child {
+      bottom: 0;
+    }
+  }
+}
