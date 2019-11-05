@@ -1,5 +1,6 @@
 import React, {PureComponent} from 'react'
-import Particle from 'components/dev/home/Particle'
+import Left from 'components/dev/home/Left'
+import Particel from 'components/dev/home/Particel'
 
 class Home extends PureComponent {
   constructor(props) {
@@ -29,10 +30,11 @@ class Home extends PureComponent {
   render() {
     return (
       <div className='homes-dev'>
+        <Particel />
         <div className='homes-dev-bg-top' ref='bgtop' />
         <div className='homes-dev-content' ref='content'>
           <div className='col-md-6 p-0'>
-            <Particle />
+            <Left />
           </div>
           <div className='col-md-6 p-0'>
             <div className='homes-dev-right-content'>

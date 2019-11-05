@@ -14,50 +14,37 @@ function Circle(pos, rad, color, ctx) {
     if (!_this.active) return
     ctx.beginPath()
     ctx.arc(_this.pos.x, _this.pos.y, _this.radius, 0, 2 * Math.PI, false)
-    ctx.fillStyle = 'rgba(192,168,168,' + _this.active + ')'
+    ctx.fillStyle = 'rgba(192, 168, 168,' + _this.active + ')'
     ctx.fill()
   }
 }
 
-class Particle extends PureComponent {
-
+class Particel extends PureComponent {
   points = []
   animateHeader = true
-
+  width = window.innerWidth
+  height = window.innerHeight
+  target = {x: this.width / 2, y: this.height / 2}
   constructor(props) {
     super(props)
     this.mouseMove = this.mouseMove.bind(this)
     this.scrollCheck = this.scrollCheck.bind(this)
     this.resize = this.resize.bind(this)
   }
-
   componentDidMount() {
     this.initHeader()
     this.initAnimation()
     this.addListeners()
   }
-
   componentWillUnmount() {
     this.removeListeners()
   }
-
-  get headerContent() {
-    return document.getElementById('header-dev-content')
-  }
-
-  initHeader() {
-    let height = window.innerHeight
+  setVariable() {
     this.ctx = this.refs.canvas.getContext('2d')
-    this.width = this.refs.largeheader.offsetWidth
-    this.height = height - this.headerContent.offsetHeight
-    this.target = {x: this.width / 2, y: this.height / 2}
-    if (window.innerWidth > 768) {
-      this.refs.largeheader.style.height = this.height + 'px'
-      this.refs.canvas.height = this.height
-    } else {
-      this.refs.largeheader.style.height = this.height / 2 + 'px'
-      this.refs.canvas.height = this.height / 2
-    }
+  }
+  initHeader() {
+    this.setVariable()
+    this.refs.canvas.height = this.height
     this.refs.canvas.width = this.width
     for (let x = 0; x < this.width; x = x + this.width / 20) {
       for (let y = 0; y < this.height; y = y + this.height / 20) {
@@ -99,7 +86,6 @@ class Particle extends PureComponent {
       this.points[i].circle = c;
     }
   }
-
   addListeners() {
     if (!('ontouchstart' in window)) {
       window.addEventListener('mousemove', this.mouseMove)
@@ -107,7 +93,6 @@ class Particle extends PureComponent {
     window.addEventListener('scroll', this.scrollCheck)
     window.addEventListener('resize', this.resize)
   }
-
   removeListeners() {
     if (!('ontouchstart' in window)) {
       window.removeEventListener('mousemove', this.mouseMove);
@@ -115,7 +100,6 @@ class Particle extends PureComponent {
     window.removeEventListener('scroll', this.scrollCheck);
     window.removeEventListener('resize', this.resize);
   }
-
   mouseMove(e) {
     let posy = 0;
     let posx = 0;
@@ -129,26 +113,14 @@ class Particle extends PureComponent {
     this.target.x = posx
     this.target.y = posy
   }
-
   scrollCheck() {
     if (document.body.scrollTop > this.height) this.animateHeader = false
     else this.animateHeader = true
   }
-
   resize() {
-    let height = window.innerHeight
-    this.width = this.refs.largeheader.offsetWidth
-    this.height = height - this.headerContent.offsetHeight
-    if (window.innerWidth > 768) {
-      this.refs.largeheader.style.height = this.height + 'px'
-      this.refs.canvas.height = this.height
-    } else {
-      this.refs.largeheader.style.height = this.height / 2 + 'px'
-      this.refs.canvas.height = this.height / 2
-    }
+    this.refs.canvas.height = this.height
     this.refs.canvas.width = this.width
   }
-
   initAnimation() {
     this.animate()
     for (let i in this.points) {
@@ -204,19 +176,11 @@ class Particle extends PureComponent {
   getDistance(p1, p2) {
     return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2)
   }
-
   render() {
     return (
-      <div className='homes-dev-large-header' ref='largeheader'>
-        <canvas ref='canvas'/>
-        <div className='homes-dev-letf-content'>
-          <h1>ONE STOP DIGITAL SOLUTION.</h1>
-          <p>"Make a strong relation, tackle challenges and produce good product."</p>
-        </div>
-      </div>
+      <canvas className='homes-dev-canvas' ref='canvas' />
     )
   }
 }
 
-
-export default Particle
+export default Particel
