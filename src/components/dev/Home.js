@@ -29,7 +29,7 @@ class Home extends PureComponent {
   }
   render() {
     return (
-      <div className='homes-dev'>
+      <div className='homes-dev' id='homes-dev'>
         <Particel />
         <div className='homes-dev-bg-top' ref='bgtop' />
         <div className='homes-dev-content' ref='content'>

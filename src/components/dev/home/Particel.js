@@ -23,7 +23,6 @@ class Particel extends PureComponent {
   points = []
   animateHeader = true
   width = window.innerWidth
-  height = window.innerHeight
   target = {x: this.width / 2, y: this.height / 2}
   constructor(props) {
     super(props)
@@ -41,6 +40,8 @@ class Particel extends PureComponent {
   }
   setVariable() {
     this.ctx = this.refs.canvas.getContext('2d')
+    console.log(document.getElementById('homes-dev').scrollHeight)
+    this.height = document.getElementById('homes-dev').offsetHeight
   }
   initHeader() {
     this.setVariable()
