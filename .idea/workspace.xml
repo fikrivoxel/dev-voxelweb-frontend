@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e52d38e8-d4eb-45e6-b45c-4b283fca9b7b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/service-dev-bg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/dev/_homes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/dev/_homes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dev/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dev/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dev/Service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dev/Service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/components/dev/_service.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/dev/_service.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,15 +48,15 @@
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\dev-voxelweb-frontend\public\images" />
+      <recent name="D:\projects\dev-voxelweb-frontend\public\fonts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\projects\dev-voxelweb-frontend\src\styles\components\dev" />
       <recent name="D:\projects\dev-voxelweb-frontend\src\styles\components" />
       <recent name="D:\projects\dev-voxelweb-frontend\src\store" />
       <recent name="D:\projects\dev-voxelweb-frontend\src" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\projects\dev-voxelweb-frontend\public\images" />
-      <recent name="D:\projects\dev-voxelweb-frontend\public\fonts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -100,7 +102,7 @@
       <workItem from="1572574190989" duration="809000" />
       <workItem from="1572833350271" duration="26796000" />
       <workItem from="1572917792401" duration="11488000" />
-      <workItem from="1572930062330" duration="6753000" />
+      <workItem from="1572930062330" duration="9259000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1572862879441</created>
@@ -151,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572937281796</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="home done">
+      <created>1572937876365</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572937876365</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,8 +1,29 @@
 .service-dev {
   min-height: 100vh;
   background-color: #fbb859;
-  margin-top: 60px;
+  margin-top: 58px;
   @include media-breakpoint-up(md) {
     margin-top: 0;
   }
+}
+.service-dev-bg-top {
+  margin-bottom: 30px;
+}
+.service-dev-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  color: #795b81;
+  text-shadow: 2px 2px 0 #FFFFFF;
+}
+.service-dev-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.service-dev-bg {
+  width: 100%;
 }
