@@ -1,5 +1,20 @@
 .homes-dev {
+  position: relative;
   min-height: 100vh;
+  &::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #fbb859;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  }
+  @include media-breakpoint-up(md) {
+    &::after {
+      bottom: 0;
+    }
+  }
 }
 .homes-dev-bg-top {
   background-color: #fbb859;
