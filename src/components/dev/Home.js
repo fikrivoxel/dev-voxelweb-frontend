@@ -25,7 +25,7 @@ class Home extends PureComponent {
     this.refs.bgtop.style.height = `${this.headerContent.offsetHeight - 1}px`
   }
   contentHeight() {
-    this.refs.content.style.minHeight = `calc(100vh - ${this.headerContent.offsetHeight + 20}px)`
+    this.refs.content.style.minHeight = `calc(100vh - ${this.headerContent.offsetHeight}px)`
   }
   render() {
     return (
