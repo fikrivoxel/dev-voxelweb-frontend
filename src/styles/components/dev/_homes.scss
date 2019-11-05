@@ -4,3 +4,31 @@
 .homes-dev-bg-top {
   background-color: #fbb859;
 }
+.homes-dev-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.homes-dev-large-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homes-dev-letf-content {
+  position: absolute;
+  z-index: 1;
+  color: #795b81;
+  > h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-style: oblique;
+  }
+  > p {
+    font-family: 'SteelFish', sans-serif;
+  }
+}

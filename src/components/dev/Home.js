@@ -1,4 +1,5 @@
 import React, {PureComponent} from 'react'
+import Particle from 'components/dev/home/Particle'
 
 class Home extends PureComponent {
   constructor(props) {
@@ -12,24 +13,30 @@ class Home extends PureComponent {
   componentWillUnmount() {
     window.removeEventListener('resize', this.resize)
   }
+  get headerContent() {
+    return document.getElementById('header-dev-content')
+  }
   resize() {
     this.bgTopHeight()
     this.contentHeight()
   }
   bgTopHeight() {
-    let headerContent = document.getElementById('header-dev-content')
-    this.refs.bgtop.style.height = `${headerContent.offsetHeight - 1}px`
+    this.refs.bgtop.style.height = `${this.headerContent.offsetHeight - 1}px`
   }
   contentHeight() {
-    let headerContent = document.getElementById('header-dev-content')
-    this.refs.content.style.minHeight = `calc(100vh - ${headerContent.offsetHeight}px)`
+    this.refs.content.style.minHeight = `calc(100vh - ${this.headerContent.offsetHeight}px)`
   }
   render() {
     return (
       <div className='homes-dev'>
         <div className='homes-dev-bg-top' ref='bgtop' />
         <div className='homes-dev-content' ref='content'>
-          a
+          <div className='col-md-6 p-0'>
+            <Particle />
+          </div>
+          <div className='col-md-6'>
+            <img src="/images/homes-dev-bg.png" alt="logo" width='100%'/>
+          </div>
         </div>
       </div>
     )
