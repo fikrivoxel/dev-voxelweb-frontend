@@ -24,7 +24,7 @@ class Home extends PureComponent {
     this.refs.bgtop.style.height = `${this.headerContent.offsetHeight - 1}px`
   }
   contentHeight() {
-    this.refs.content.style.minHeight = `calc(100vh - ${this.headerContent.offsetHeight}px)`
+    this.refs.content.style.height = `calc(100vh - ${this.headerContent.offsetHeight + 20}px)`
   }
   render() {
     return (
@@ -34,8 +34,10 @@ class Home extends PureComponent {
           <div className='col-md-6 p-0'>
             <Particle />
           </div>
-          <div className='col-md-6'>
-            <img src="/images/homes-dev-bg.png" alt="logo" width='100%'/>
+          <div className='col-md-6 p-0'>
+            <div className='homes-dev-right-content'>
+              <img src="/images/homes-dev-bg.png" alt="logo" className='homes-dev-bg' ref='logo'/>
+            </div>
           </div>
         </div>
       </div>

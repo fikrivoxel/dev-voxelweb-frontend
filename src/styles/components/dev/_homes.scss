@@ -7,7 +7,6 @@
 .homes-dev-content {
   display: flex;
   align-items: center;
-  flex-direction: column;
   flex-wrap: wrap;
   @include media-breakpoint-up(md) {
     flex-direction: row;
@@ -24,11 +23,29 @@
   position: absolute;
   z-index: 1;
   color: #795b81;
+  text-align: center;
   > h1 {
     font-family: 'Bebas Neue', sans-serif;
     font-style: oblique;
   }
   > p {
     font-family: 'SteelFish', sans-serif;
+    font-size: $h5-font-size;
+    letter-spacing: 2px;
+  }
+  @include media-breakpoint-up(md) {
+    text-align: left;
+  }
+}
+.homes-dev-bg {
+  width: 100%;
+}
+.homes-dev-right-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: {
+    left: 30px;
+    right: 30px;
   }
 }
