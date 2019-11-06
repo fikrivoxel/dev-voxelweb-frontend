@@ -40,7 +40,6 @@ class Particel extends PureComponent {
   }
   setVariable() {
     this.ctx = this.refs.canvas.getContext('2d')
-    console.log(document.getElementById('homes-dev').scrollHeight)
     this.height = document.getElementById('homes-dev').offsetHeight
   }
   initHeader() {
@@ -128,7 +127,6 @@ class Particel extends PureComponent {
       this.shiftPoint(this.points[i])
     }
   }
-
   shiftPoint(p) {
     TweenLite.to(p, 1 + Math.random(), {
       x: p.originX - 50 + Math.random() * 100,
@@ -179,7 +177,7 @@ class Particel extends PureComponent {
   }
   render() {
     return (
-      <canvas className='homes-dev-canvas' ref='canvas' />
+      <canvas className='homes-dev-canvas' ref='canvas' id='homes-dev-canvas' />
     )
   }
 }

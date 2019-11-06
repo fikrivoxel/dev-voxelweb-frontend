@@ -1,6 +1,17 @@
 .service-dev {
   min-height: 100vh;
   background-color: #fbb859;
+  border-bottom: 1px solid #fbb859;
+  &::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #fbb859;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 31%);
+    z-index: 5;
+  }
 }
 .service-dev-bg-top {
   margin-bottom: 30px;
@@ -10,6 +21,7 @@
   font-size: 3rem;
   color: #795b81;
   text-shadow: 2px 2px 0 #FFFFFF;
+  margin-bottom: 0;
 }
 .service-dev-content {
   display: flex;

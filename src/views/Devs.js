@@ -2,6 +2,7 @@ import React, {PureComponent} from 'react'
 import Header from 'components/dev/Header'
 import Home from 'components/dev/Home'
 import Service from 'components/dev/Service'
+import Portofolio from 'components/dev/Portofolio'
 
 class Devs extends PureComponent {
   render() {
@@ -10,6 +11,7 @@ class Devs extends PureComponent {
         <Header/>
         <Home />
         <Service />
+        <Portofolio />
       </div>
     )
   }

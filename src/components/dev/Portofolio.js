@@ -1,12 +1,10 @@
 import React, {PureComponent} from 'react'
+import Particel from 'components/dev/portofolio/Particel'
 
-class Service extends PureComponent {
+class Portofolio extends PureComponent {
   constructor(props) {
     super(props)
     this.resize = this.resize.bind(this)
-  }
-  get headerContent() {
-    return document.getElementById('header-dev-content')
   }
   componentDidMount() {
     this.resize()
@@ -14,6 +12,9 @@ class Service extends PureComponent {
   }
   componentWillUnmount() {
     window.removeEventListener('resize', this.resize)
+  }
+  get headerContent() {
+    return document.getElementById('header-dev-content')
   }
   resize() {
     this.bgTopHeight()
@@ -27,20 +28,18 @@ class Service extends PureComponent {
   }
   render() {
     return (
-      <div className='service-dev'>
-        <div className='service-dev-bg-top' ref='bgtop' />
-        <h1 className='service-dev-title text-center' ref='title'>SERVICES.</h1>
-        <div className='service-dev-content' ref='content'>
-          <div className='col-md-6 p-0'>
-            <div className='service-dev-right-content'>
-              <img src="/images/service-dev-bg.png" alt="logo" className='service-dev-bg' ref='logo'/>
-            </div>
+      <div className='portofolio-dev' id='portofolio-dev'>
+        <Particel />
+        <div className='portofolio-dev-bg-top' ref='bgtop' />
+        <h1 className='portofolio-dev-title text-center' ref='title'>PORTOFOLIO.</h1>
+        <div className='portofolio-dev-content' ref='content'>
+          <div className='col-md-9 p-0'>
+            a
           </div>
-          <div className='col-md-6'>a</div>
         </div>
       </div>
     )
   }
 }
 
-export default Service
+export default Portofolio

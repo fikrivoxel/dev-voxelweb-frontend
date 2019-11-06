@@ -3,6 +3,7 @@ import {render} from 'react-dom'
 import App from 'App'
 import {configureStore, history, configurePeristor} from 'store/config'
 import 'styles/app.scss'
+import 'particles.js/particles'
 
 const store = configureStore()
 const peristor = configurePeristor(store)
