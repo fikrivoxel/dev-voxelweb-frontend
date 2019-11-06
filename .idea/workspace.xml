@@ -2,18 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e52d38e8-d4eb-45e6-b45c-4b283fca9b7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/dev/Portofolio.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dev/portofolio/Particel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/components/dev/_portofolio.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/frame/_frame.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/frame/androidPhone.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/frame/androidTablet.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/frame/common.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/frame/imac.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/frame/ipad.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/frame/iphone.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/frame/iphonex.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dev/Service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dev/Service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dev/home/Particel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dev/home/Particel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dev/Portofolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dev/Portofolio.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/dev/_dev.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/dev/_dev.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/dev/_service.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/dev/_service.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Devs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Devs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/components/dev/_portofolio.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/dev/_portofolio.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -44,7 +45,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/fonts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/styles/frame" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -63,6 +64,7 @@
       <recent name="D:\projects\dev-voxelweb-frontend\src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\dev-voxelweb-frontend\src\styles\frame" />
       <recent name="D:\projects\dev-voxelweb-frontend\public\fonts" />
       <recent name="D:\projects\dev-voxelweb-frontend\public\images" />
     </key>
@@ -111,7 +113,7 @@
       <workItem from="1572833350271" duration="26796000" />
       <workItem from="1572917792401" duration="11488000" />
       <workItem from="1572930062330" duration="13021000" />
-      <workItem from="1573005128850" duration="12298000" />
+      <workItem from="1573005128850" duration="19023000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1572862879441</created>
@@ -183,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573005699639</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="portofolio">
+      <created>1573018204622</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1573018204622</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +215,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="home done" />
     <MESSAGE value="service" />
-    <option name="LAST_COMMIT_MESSAGE" value="service" />
+    <MESSAGE value="portofolio" />
+    <option name="LAST_COMMIT_MESSAGE" value="portofolio" />
   </component>
 </project>
