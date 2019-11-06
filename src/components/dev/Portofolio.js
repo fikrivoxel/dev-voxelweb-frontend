@@ -42,7 +42,9 @@ class Portofolio extends PureComponent {
         <div className='portofolio-dev-content' ref='content'>
           <div className='col-md-3 p-0'>
             <div className='portofolio-dev-left'>
-              a
+              <div className='portofolio-dev-preview'></div>
+              <div className='portofolio-dev-preview'></div>
+              <div className='portofolio-dev-preview'></div>
             </div>
           </div>
           <div className='col-md-9 p-0'>
@@ -73,7 +75,7 @@ class Portofolio extends PureComponent {
                     </div>
                   </div>
                 </div>
-                <div className='portofolio-dev-desc'>
+                <div className='portofolio-dev-desc text-truncate'>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit metus pretium elementum tincidunt.
                 </div>
               </div>
