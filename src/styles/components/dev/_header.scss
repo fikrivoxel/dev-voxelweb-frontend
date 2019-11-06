@@ -56,7 +56,10 @@
 .header-dev-container {
   position: relative;
   display: flex;
-  background-color: #fff;
+  background-color: transparent;
+  @include media-breakpoint-up(md) {
+    background-color: #fff;
+  }
 }
 .header-dev-toggle {
   margin-left: auto;
@@ -119,7 +122,6 @@
 }
 .header-dev-btn {
   font-family: 'Bebas Neue', sans-serif;
-  text-align: left;
   display: block;
   width: 100%;
   background-color: transparent;

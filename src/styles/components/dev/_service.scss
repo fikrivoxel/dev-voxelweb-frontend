@@ -1,10 +1,6 @@
 .service-dev {
   min-height: 100vh;
   background-color: #fbb859;
-  margin-top: 58px;
-  @include media-breakpoint-up(md) {
-    margin-top: 0;
-  }
 }
 .service-dev-bg-top {
   margin-bottom: 30px;

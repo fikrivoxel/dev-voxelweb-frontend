@@ -8,21 +8,26 @@
     right: 0;
     height: 60px;
     background-color: #fbb859;
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-  }
-  @include media-breakpoint-up(md) {
-    &::after {
-      bottom: 0;
-    }
+    clip-path: polygon(0 69%, 100% 0, 100% 100%, 0% 100%);
+    bottom: 0;
   }
 }
 .homes-dev-bg-top {
-  background-color: #fbb859;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    background-color: #fbb859;
+  }
 }
 .homes-dev-content {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  flex-direction: column;
   @include media-breakpoint-up(md) {
     flex-direction: row;
     justify-content: center;
@@ -34,23 +39,40 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 250px;
+  margin-top: 60px;
+  //height: 300px;
+  @include media-breakpoint-up(md) {
+    margin-top: 0;
+    height: auto;
+    padding: {
+      left: 50px;
+      right: 50px;
+    }
+  }
 }
 .homes-dev-letf-content {
   z-index: 1;
   color: #795b81;
   text-align: center;
   > h1 {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'SteelFish', sans-serif;
     font-style: oblique;
+    font-weight: bold;
+    letter-spacing: 5px;
   }
   > p {
-    font-family: 'SteelFish', sans-serif;
+    font-family: 'cour', monospace;
     font-size: $h5-font-size;
-    letter-spacing: 2px;
+    padding: {
+      left: 20px;
+      right: 20px;
+    }
   }
   @include media-breakpoint-up(md) {
     text-align: left;
+    > p {
+      padding: 0;
+    }
   }
 }
 .homes-dev-bg {
