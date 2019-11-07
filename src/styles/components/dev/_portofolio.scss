@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: column;
+  //flex-direction: column;
   @include media-breakpoint-up(md) {
     flex-direction: row-reverse;
     justify-content: center;
@@ -47,9 +47,6 @@
   margin-bottom: 30px;
   //width: 100%;
 }
-.portofolio-dev-desc {
-  width: 100%;
-}
 .portofolio-dev-laptop {
   width: 320px;
   @include media-breakpoint-up(sm) {
@@ -67,33 +64,45 @@
     top: 162px;
   }
 }
-.portofolio-dev-desc {
+.portofolio-dev-descgroup {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-align: center;
   width: 100%;
+  @include media-breakpoint-up(sm) {
+    width: 600px;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 2rem;
+  }
   @include media-breakpoint-up(lg) {
+    font-size: 2.5rem;
     width: 80%;
   }
 }
 .portofolio-dev-left {
   display: flex;
   justify-content: center;
+  width: 100%;
   padding: {
     top: 30px;
     bottom: 30px;
   }
+  overflow: auto;
   @include media-breakpoint-up(md) {
     flex-direction: column;
-    flex-wrap: wrap;
     padding: 0;
   }
 }
 .portofolio-dev-preview {
+  display: flex;
+  align-items: center;
+  flex: 0 0 200px;
   width: 200px;
   height: 150px;
-  background-color: black;
+  max-height: 150px;
   margin-right: 20px;
+  cursor: pointer;
   @include media-breakpoint-up(md) {
     margin-right: 0;
     margin-bottom: 20px;
