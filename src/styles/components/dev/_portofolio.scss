@@ -22,7 +22,7 @@
 }
 .portofolio-dev-title {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 3rem;
+  font-size: 4.5rem;
   color: #795b81;
   margin-bottom: 0;
   z-index: 1;
@@ -52,6 +52,12 @@
   @include media-breakpoint-up(sm) {
     width: 600px;
   }
+  @include media-breakpoint-up(md) {
+    width: 650px;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 700px;
+  }
 }
 .portofolio-dev-phone {
   position: absolute;
@@ -61,6 +67,11 @@
   @include media-breakpoint-up(sm) {
     width: 112px;
     right: 42px;
+    top: 162px;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 129px;
+    right: 50px;
     top: 162px;
   }
 }
@@ -82,13 +93,15 @@
 }
 .portofolio-dev-left {
   display: flex;
-  justify-content: center;
   width: 100%;
   padding: {
     top: 30px;
     bottom: 30px;
   }
   overflow: auto;
+  @include media-breakpoint-up(sm) {
+    justify-content: center;
+  }
   @include media-breakpoint-up(md) {
     flex-direction: column;
     padding: 0;

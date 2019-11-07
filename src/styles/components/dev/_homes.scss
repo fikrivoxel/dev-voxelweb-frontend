@@ -55,6 +55,7 @@
   color: #795b81;
   text-align: center;
   > h1 {
+    font-size: 3rem;
     font-family: 'SteelFish', sans-serif;
     font-style: oblique;
     font-weight: bold;
@@ -70,6 +71,9 @@
   }
   @include media-breakpoint-up(md) {
     text-align: left;
+    > h1 {
+      font-size: 5rem;
+    }
     > p {
       padding: 0;
     }

@@ -1,0 +1,37 @@
+.input-form {
+  position: relative;
+  margin: {
+    top: 1.5rem;
+    bottom: 1.5rem;
+  }
+
+  .form-control {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #03c2cc;
+    border-radius: 0;
+    color: white;
+    @include transition(border-color .15s, box-shadow .15s);
+
+    &:focus {
+      box-shadow: 0 1px 0 0 lighten(#03c2cc, 5);
+      border-bottom-color: lighten(#03c2cc, 5);
+    }
+  }
+}
+
+.label-form {
+  position: absolute;
+  top: 0;
+  left: 12px;
+  display: block;
+  margin-bottom: 0;
+  color: white;
+  transform-origin: 0 100%;
+  @include transition(transform .15s);
+
+  &.active {
+    color: darken(white, 30);
+    transform: translateY(-14px) scale(.8);
+  }
+}

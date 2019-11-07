@@ -84,7 +84,6 @@ class Portofolio extends PureComponent {
     return document.getElementById('header-dev-content')
   }
 
-
   next() {
     if (this.animating) return
     let next = this.state.activeIdx === this.portofolio.length - 1 ? 0 : this.state.activeIdx + 1
