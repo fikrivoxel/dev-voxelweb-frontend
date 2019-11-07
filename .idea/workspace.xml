@@ -4,7 +4,6 @@
     <list default="true" id="e52d38e8-d4eb-45e6-b45c-4b283fca9b7b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dev/Portofolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dev/Portofolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/dev/_portofolio.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/dev/_portofolio.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +101,8 @@
       <workItem from="1572833350271" duration="26796000" />
       <workItem from="1572917792401" duration="11488000" />
       <workItem from="1572930062330" duration="13021000" />
-      <workItem from="1573005128850" duration="21345000" />
+      <workItem from="1573005128850" duration="22345000" />
+      <workItem from="1573092392877" duration="492000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1572862879441</created>
@@ -188,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573026966069</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="portofolio">
+      <created>1573029386904</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1573029386904</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
