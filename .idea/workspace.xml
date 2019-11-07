@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e52d38e8-d4eb-45e6-b45c-4b283fca9b7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/dev/ContactUs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dev/form/Input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dev/form/Textarea.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/components/dev/_contact.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/components/form/_btn.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/components/form/_form.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/components/form/_input.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dev/Portofolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dev/Portofolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/_components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/_components.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/dev/_dev.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/dev/_dev.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/dev/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/dev/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/dev/_homes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/dev/_homes.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/dev/_portofolio.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/dev/_portofolio.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/dev/_service.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/dev/_service.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Devs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Devs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/components/dev/_contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/dev/_contact.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +103,7 @@
       <workItem from="1572917792401" duration="11488000" />
       <workItem from="1572930062330" duration="13021000" />
       <workItem from="1573005128850" duration="22345000" />
-      <workItem from="1573092392877" duration="21182000" />
+      <workItem from="1573092392877" duration="21877000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1572862879441</created>
@@ -224,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573100911564</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="contact us">
+      <created>1573114818072</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1573114818072</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +242,7 @@
     <MESSAGE value="service" />
     <MESSAGE value="portofolio" />
     <MESSAGE value="portofolio done" />
-    <option name="LAST_COMMIT_MESSAGE" value="portofolio done" />
+    <MESSAGE value="contact us" />
+    <option name="LAST_COMMIT_MESSAGE" value="contact us" />
   </component>
 </project>
