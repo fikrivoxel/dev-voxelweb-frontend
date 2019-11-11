@@ -5,7 +5,7 @@ import Textarea from 'components/dev/form/Textarea'
 class ContactUs extends PureComponent {
   render() {
     return (
-      <div className='contact-dev'>
+      <div className='contact-dev' id='contact-dev'>
         <h1 className='contact-dev-title text-center' ref='title'>CONTACT US.</h1>
         <div className='contact-dev-content' ref='content'>
           <div className='contact-dev-container'>

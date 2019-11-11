@@ -27,7 +27,7 @@ class Service extends PureComponent {
   }
   render() {
     return (
-      <div className='service-dev'>
+      <div className='service-dev' id='service-dev'>
         <div className='service-dev-bg-top' ref='bgtop' />
         <h1 className='service-dev-title text-center' ref='title'>SERVICES.</h1>
         <div className='service-dev-content' ref='content'>

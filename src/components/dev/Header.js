@@ -62,6 +62,12 @@ class Header extends PureComponent {
       this.refs.nav.style.height = 'auto';
     }
   }
+  scrollTo(target) {
+    let el = document.getElementById(`${target}-dev`)
+    el.scrollIntoView({
+      behavior: 'smooth'
+    })
+  }
   render() {
     return (
       <div className='header-dev'>
@@ -85,22 +91,22 @@ class Header extends PureComponent {
             <div className='header-dev-nav' ref='nav'>
               <ul className='header-dev-menu'>
                 <li>
-                  <button className='header-dev-btn'>
+                  <button className='header-dev-btn' onClick={() => this.scrollTo('homes')}>
                     Home
                   </button>
                 </li>
                 <li>
-                  <button className='header-dev-btn'>
+                  <button className='header-dev-btn' onClick={() => this.scrollTo('service')}>
                     Service
                   </button>
                 </li>
                 <li>
-                  <button className='header-dev-btn'>
+                  <button className='header-dev-btn' onClick={() => this.scrollTo('portofolio')}>
                     Portofolio
                   </button>
                 </li>
                 <li>
-                  <button className='header-dev-btn'>
+                  <button className='header-dev-btn' onClick={() => this.scrollTo('contact')}>
                     Contact
                   </button>
                 </li>

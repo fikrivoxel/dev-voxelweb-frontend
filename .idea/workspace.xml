@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e52d38e8-d4eb-45e6-b45c-4b283fca9b7b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/dev/_contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/dev/_contact.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dev/ContactUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dev/ContactUs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dev/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dev/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dev/Service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dev/Service.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +35,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/logo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../akuntansi" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -103,7 +105,9 @@
       <workItem from="1572917792401" duration="11488000" />
       <workItem from="1572930062330" duration="13021000" />
       <workItem from="1573005128850" duration="22345000" />
-      <workItem from="1573092392877" duration="21877000" />
+      <workItem from="1573092392877" duration="22501000" />
+      <workItem from="1573438470807" duration="502000" />
+      <workItem from="1573442736807" duration="1697000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1572862879441</created>
@@ -217,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573114818072</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fix contact">
+      <created>1573115663046</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1573115663046</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +254,7 @@
     <MESSAGE value="portofolio" />
     <MESSAGE value="portofolio done" />
     <MESSAGE value="contact us" />
-    <option name="LAST_COMMIT_MESSAGE" value="contact us" />
+    <MESSAGE value="fix contact" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix contact" />
   </component>
 </project>
