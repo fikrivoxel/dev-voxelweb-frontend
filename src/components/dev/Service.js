@@ -1,6 +1,10 @@
 import React, {PureComponent} from 'react'
-
+import {SERVICES} from 'config/index'
+/*global $*/
 class Service extends PureComponent {
+  state = {
+    activeIdx: 0
+  }
   constructor(props) {
     super(props)
     this.resize = this.resize.bind(this)
@@ -8,8 +12,28 @@ class Service extends PureComponent {
   get headerContent() {
     return document.getElementById('header-dev-content')
   }
+  get servicesIconMap() {
+    return SERVICES.map((ser, idx) => (
+      <div className={`cloud9-item ${ser.classes}`} key={idx}>
+        <img src={ser.img} alt={`icon-${idx}`} />
+      </div>
+    ))
+  }
   componentDidMount() {
     this.resize()
+    $(this.refs.carousel).Cloud9Carousel({
+      yOrigin: 42,
+      yRadius: 48,
+      autoPlay: 0,
+      bringToFront: true,
+      onAnimationFinished: () => {
+        let item = $(this.refs.carousel).data("carousel")
+        let idx = Math.ceil(item.floatIndex())
+        this.setState({
+          activeIdx: idx
+        })
+      }
+    })
     window.addEventListener('resize', this.resize)
   }
   componentWillUnmount() {
@@ -36,7 +60,16 @@ class Service extends PureComponent {
               <img src="/images/service-dev-bg.png" alt="logo" className='service-dev-bg' ref='logo'/>
             </div>
           </div>
-          <div className='col-md-6'>a</div>
+          <div className='col-md-6'>
+            <div ref='carousel' className='service-dev-carousel'>
+              {this.servicesIconMap}
+            </div>
+            <div className='service-dev-desc'>
+              <div className='service-dev-dcontent'>
+                a
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     )

@@ -6,32 +6,34 @@ class Input extends PureComponent {
     this.onFocus = this.onFocus.bind(this)
     this.onBlur = this.onBlur.bind(this)
   }
-  componentDidMount() {
-    this.refs.input.addEventListener('focus', this.onFocus)
-    this.refs.input.addEventListener('blur', this.onBlur)
-  }
-  componentWillUnmount() {
-    this.refs.input.removeEventListener('focus', this.onFocus)
-    this.refs.input.removeEventListener('blur', this.onBlur)
-  }
   get label() {
     return this.props.label || {
       id: 'label',
       name: 'Hello'
     }
   }
+  validation(state) {
+    return state ? 'form-error' : ''
+  }
   onFocus() {
     this.refs.label.classList.add('active')
   }
-  onBlur() {
-    if (this.refs.input.value === '') {
+  onBlur(e) {
+    if (e.target.value === '') {
       this.refs.label.classList.remove('active')
     }
   }
   render() {
+    let {form} = this.props
     return (
-      <div className='input-form' ref='group'>
-        <input type="text" className='form-control' id={this.label.id} ref='input'/>
+      <div className={`input-form ${this.validation(form.errors[this.label.id])}`} ref='group'>
+        <input type="text"
+               className='form-control'
+               id={this.label.id}
+               name={this.label.id}
+               onFocus={this.onFocus}
+               onBlur={this.onBlur}
+               ref={form.register({required: true})}/>
         <label htmlFor={this.label.id} className='label-form' ref='label'>
           {this.label.name}
         </label>

@@ -2,10 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e52d38e8-d4eb-45e6-b45c-4b283fca9b7b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/icon/icon_Applications.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icon/icon_BrandingSolution.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icon/icon_EnterpriseSoftware_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icon/icon_OnlineMarketing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icon/icon_WebDevelopment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/services.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/libs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dev/ContactUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dev/ContactUs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dev/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dev/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dev/Service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dev/Service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dev/form/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dev/form/Input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dev/form/Textarea.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dev/form/Textarea.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/components/dev/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/dev/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/components/dev/_service.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/dev/_service.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/components/form/_input.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/form/_input.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -35,7 +50,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../akuntansi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/svg" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -47,17 +62,18 @@
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\projects\dev-voxelweb-frontend\public\images\logo" />
-      <recent name="D:\projects\dev-voxelweb-frontend\src\styles\frame" />
-      <recent name="D:\projects\dev-voxelweb-frontend\public\fonts" />
-      <recent name="D:\projects\dev-voxelweb-frontend\public\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\projects\dev-voxelweb-frontend\src\styles\components\dev" />
       <recent name="D:\projects\dev-voxelweb-frontend\src\styles\components" />
       <recent name="D:\projects\dev-voxelweb-frontend\src\store" />
       <recent name="D:\projects\dev-voxelweb-frontend\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\dev-voxelweb-frontend\public\images\svg" />
+      <recent name="D:\projects\dev-voxelweb-frontend\public\images\logo" />
+      <recent name="D:\projects\dev-voxelweb-frontend\src\styles\frame" />
+      <recent name="D:\projects\dev-voxelweb-frontend\public\fonts" />
+      <recent name="D:\projects\dev-voxelweb-frontend\public\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -107,7 +123,8 @@
       <workItem from="1573005128850" duration="22345000" />
       <workItem from="1573092392877" duration="22501000" />
       <workItem from="1573438470807" duration="502000" />
-      <workItem from="1573442736807" duration="1697000" />
+      <workItem from="1573442736807" duration="1802000" />
+      <workItem from="1575944657508" duration="16340000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1572862879441</created>
@@ -228,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573115663046</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fix header">
+      <created>1573444463386</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1573444463386</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,6 +279,7 @@
     <MESSAGE value="portofolio done" />
     <MESSAGE value="contact us" />
     <MESSAGE value="fix contact" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix contact" />
+    <MESSAGE value="fix header" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix header" />
   </component>
 </project>
