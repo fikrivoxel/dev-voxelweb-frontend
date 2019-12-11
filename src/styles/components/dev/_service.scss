@@ -83,16 +83,36 @@
 }
 
 .service-dev-desc {
-  width: 80%;
+  width: calc(100% - 70px);
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  height: 120px;
+  min-height: 120px;
   background-color: #fff;
-  transform: skew(-35deg);
+  transform: skew(-10deg);
   box-shadow: 12px 11px 0px -5px #675d84;
 }
 
 .service-dev-dcontent {
-  transform: skew(35deg);
+  transform: skew(10deg);
+  width: calc(100% - 70px);
+  margin: auto;
+}
+
+.service-dev-carousel-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2em;
+  text-align: center;
+  @include media-breakpoint-up(lg) {
+    font-size: 2.5rem;
+  }
+}
+
+.service-dev-carousel-desc {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  @include media-breakpoint-up(lg) {
+    font-size: 2rem;
+  }
 }

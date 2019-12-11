@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e52d38e8-d4eb-45e6-b45c-4b283fca9b7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/portofolio/numan-hp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/portofolio/numan.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dev/Service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dev/Service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dev/form/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dev/form/Input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/portofolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/portofolio.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/services.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/services.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/dev/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/dev/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/components/dev/_service.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/dev/_service.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +111,7 @@
       <workItem from="1573442736807" duration="1802000" />
       <workItem from="1575944657508" duration="16340000" />
       <workItem from="1575964895269" duration="104000" />
-      <workItem from="1576029992766" duration="4202000" />
+      <workItem from="1576029992766" duration="7780000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1572862879441</created>
@@ -250,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575964925232</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fix service &amp; contact">
+      <created>1576034801442</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1576034801442</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,6 +282,7 @@
     <MESSAGE value="fix contact" />
     <MESSAGE value="fix header" />
     <MESSAGE value="add header" />
-    <option name="LAST_COMMIT_MESSAGE" value="add header" />
+    <MESSAGE value="fix service &amp; contact" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix service &amp; contact" />
   </component>
 </project>

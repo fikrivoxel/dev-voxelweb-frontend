@@ -31,7 +31,12 @@ class Service extends PureComponent {
         onExiting={() => this.animating = true}
         onExited={() => this.animating = false}
         key={idx}>
-        {ser.desc}
+        <div className='service-dev-carousel-title'>
+          {ser.title}
+        </div>
+        <div className='service-dev-carousel-desc'>
+          {ser.desc}
+        </div>
       </CarouselItem>
     ))
   }
