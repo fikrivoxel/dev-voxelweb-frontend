@@ -1,7 +1,13 @@
 import React, {PureComponent} from 'react'
+import {
+  Carousel,
+  CarouselItem
+} from 'reactstrap'
 import {SERVICES} from 'config/index'
 /*global $*/
 class Service extends PureComponent {
+  animating = false
+  services = SERVICES
   state = {
     activeIdx: 0
   }
@@ -13,11 +19,36 @@ class Service extends PureComponent {
     return document.getElementById('header-dev-content')
   }
   get servicesIconMap() {
-    return SERVICES.map((ser, idx) => (
+    return this.services.map((ser, idx) => (
       <div className={`cloud9-item ${ser.classes}`} key={idx}>
         <img src={ser.img} alt={`icon-${idx}`} />
       </div>
     ))
+  }
+  get caraouselMap() {
+    return this.services.map((ser, idx) => (
+      <CarouselItem
+        onExiting={() => this.animating = true}
+        onExited={() => this.animating = false}
+        key={idx}>
+        {ser.desc}
+      </CarouselItem>
+    ))
+  }
+  next() {
+    if (this.animating) return
+    let next = this.state.activeIdx === this.services.length - 1 ? 0 : this.state.activeIdx + 1
+    this.setState({
+      activeIdx: next
+    })
+  }
+
+  prev() {
+    if (this.animating) return
+    let prev = this.state.activeIdx === 0 ? this.services.length - 1 : this.state.activeIdx - 1
+    this.setState({
+      activeIdx: prev
+    })
   }
   componentDidMount() {
     this.resize()
@@ -66,7 +97,13 @@ class Service extends PureComponent {
             </div>
             <div className='service-dev-desc'>
               <div className='service-dev-dcontent'>
-                a
+                <Carousel
+                  activeIndex={this.state.activeIdx}
+                  interval={false}
+                  next={this.next}
+                  previous={this.prev}>
+                  {this.caraouselMap}
+                </Carousel>
               </div>
             </div>
           </div>

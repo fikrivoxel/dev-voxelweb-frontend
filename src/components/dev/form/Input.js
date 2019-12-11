@@ -12,6 +12,18 @@ class Input extends PureComponent {
       name: 'Hello'
     }
   }
+  get register() {
+    let valid = {
+      required: true
+    }
+    if (this.label.id === 'email') {
+      valid.pattern = {
+        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+        message: "invalid email address"
+      }
+    }
+    return this.props.form.register(valid)
+  }
   validation(state) {
     return state ? 'form-error' : ''
   }
@@ -33,7 +45,7 @@ class Input extends PureComponent {
                name={this.label.id}
                onFocus={this.onFocus}
                onBlur={this.onBlur}
-               ref={form.register({required: true})}/>
+               ref={this.register}/>
         <label htmlFor={this.label.id} className='label-form' ref='label'>
           {this.label.name}
         </label>
